@@ -1,0 +1,5 @@
+CREATE USER 'tifosi'@'localhost' IDENTIFIED BY 'tifosi.ADMIN';
+
+-- # Privilèges pour `tifosi`@`%`
+
+GRANT ALL PRIVILEGES ON *.* TO 'tifosi'@'localhost'; ALTER USER 'tifosi'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
